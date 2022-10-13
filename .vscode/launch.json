@@ -10,7 +10,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/len_ext_attack.py",
             "console": "internalConsole",
-            "args": ["TODO: PUT URL HERE"]
+            "args": [
+                "https://project1.eecs388.org/uniqname/lengthextension/api?token="
+            ]
         },
         {
             "name": "Vigenere",
@@ -18,7 +20,10 @@
             "request": "launch",
             "program": "${workspaceFolder}/vigenere.py",
             "console": "internalConsole",
-            "args": ["<", "TODO: PUT NAME OF INPUT FILE HERE"]
+            "args": [
+                "<",
+                "TODO: PUT NAME OF INPUT FILE HERE"
+            ]
         },
         {
             "name": "Bleichenbacher",
@@ -26,7 +31,9 @@
             "request": "launch",
             "program": "${workspaceFolder}/bleichenbacher.py",
             "console": "internalConsole",
-            "args": ["TODO: PUT MESSAGE HERE"]
+            "args": [
+                "TODO: PUT MESSAGE HERE"
+            ]
         },
         {
             "name": "Padding Oracle",
@@ -34,7 +41,10 @@
             "request": "launch",
             "program": "${workspaceFolder}/padding_oracle.py",
             "console": "internalConsole",
-            "args": ["TODO: PUT URL HERE", "TODO: PUT CIPHERTEXT HERE"]
+            "args": [
+                "https://project1.eecs388.org/taetae/paddingoracle/verify",
+                "02b3b89ec31afa9067199f2bd40ff137e6c8db8ce3ceadd55e2e36d59e96f74cd4347cad3368af483494f5098f33e0bbbb34fd1adc3ccd355275b926490506b3aae31766694df7eb02ffdbed587622cc3581402e72dc17be76e8b56ce3f4800801a3f43038dc10e7016090a79096fc148f0cb487b2986fe2354dfa1bd00c6fe9"
+            ]
         }
     ]
 }

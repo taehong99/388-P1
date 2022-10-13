@@ -1,0 +1,10 @@
+
+"""
+from hashlib import sha256
+result = sha256(blob.encode("latin-1")).hexdigest()
+firstHex = result[0]
+
+if firstHex=='9':
+    print("Use SHA-256 instead!")
+else:
+    print("MD5 is perfectly secure!")

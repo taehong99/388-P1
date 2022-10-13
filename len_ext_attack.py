@@ -34,9 +34,19 @@ def main():
     #
     # TODO: Modify the URL
     #
-    url.token = 'TODO'
-    url.suffix += 'TODO'
+    hash = url.token
 
+    # message = "*******command=xxxx"
+    msgLen = 8 + len(url.suffix)
+    msgPad = len(padding(msgLen * 8))
+    bits = (msgLen + msgPad) * 8
+
+    h = md5(state=bytes.fromhex(hash), count=bits)
+    append = "&command=UnlockSafes"
+    h.update(append)
+
+    url.token = h.hexdigest()
+    url.suffix += (quote(padding(msgLen*8)) + append)
     print(url)
 
 
